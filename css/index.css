@@ -33,6 +33,11 @@ body {
     padding-left: 8px;
 }
 
+#inscription_link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #search_bar {
     background-color: #66FF66;
 }

@@ -1,10 +1,16 @@
-<?php require_once 'template/talent.php'; ?>
+<?php
+require_once 'template/talent.php';
+require_once 'template/inscription.php';
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <LINK href="css/index.css" rel="stylesheet" type="text/css"/>
+        <LINK href="css/inscription.css" rel="stylesheet" type="text/css"/>
+        <script src="script/jquery-1.7.1.min.js"></script>
+        <script src="script/index.js"></script>
     </head>
     <body>
         <div id="title">
@@ -18,7 +24,7 @@
                                 <td><input type="submit" value="connection" name="submit" /></td>
                             </tr>
                             <tr>
-                                <td><a href="">Inscription</a></td>
+                                <td><a id="inscription_link">Inscription</a></td>
                                 <td><a href="">Mot de passe oublier?</a></td>
                                 <td><input type="checkbox" name="remember" value="yes" />Retenir mon mot de passe</td>
                             </tr>
@@ -88,6 +94,7 @@
                 </div>
             </div>
         </div>
+        <?php inscription_box(); ?>
     </body>
 </html>
 

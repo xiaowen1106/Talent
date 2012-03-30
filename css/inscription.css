@@ -1,0 +1,30 @@
+/* 
+    Document   : inscription
+    Created on : Mar 30, 2012, 9:38:40 PM
+    Author     : zhang
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+#window {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    height:200px;
+    width:500px;
+    position:fixed;
+    left:370px;
+    top:180px;
+    background-color: white;
+    display: none;
+}
+
