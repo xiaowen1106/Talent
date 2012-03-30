@@ -51,9 +51,43 @@ body {
     height:100%;
 }
 
+#cataglogue_list {
+    padding-left: 0px;
+}
+
+#catalogue_title {
+    background-color: #778D9B;
+    height:35px;
+}
+
+#cataglogue_list li {
+    display: block;
+}
+
+#category_button {
+    width:100%;
+    height:62px;
+}
+
 #center_container{
     background-color:#778D98;
     height:100%;
+}
+
+#center_upper {
+    background-color: white;
+    height:68px;
+}
+
+#slogan_container {
+    float:left;
+    text-align: center;
+    width:600px;
+}
+
+#share_container {
+    float:right;
+    padding-top: 10px;
 }
 
 #talents {
