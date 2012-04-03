@@ -1,7 +1,7 @@
 <?php
 require_once 'template/talent.php';
 require_once 'template/inscription.php';
-require_once 'template/title.php';
+require_once 'template/framework.php';
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -15,24 +15,7 @@ require_once 'template/title.php';
     </head>
     <body>
         <div id="title">
-            <div id="connection_form">
-                <form>
-                    <table border="0">
-                        <tbody>
-                            <tr>
-                                <td><input type="username" name="username" value="" /></td>
-                                <td><input type="password" name="password" value="" /></td>
-                                <td><input type="submit" value="connection" name="submit" /></td>
-                            </tr>
-                            <tr>
-                                <td><a id="inscription_link">Inscription</a></td>
-                                <td><a href="">Mot de passe oublier?</a></td>
-                                <td><input type="checkbox" name="remember" value="yes" />Retenir mon mot de passe</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-            </div>
+            <?php title_non_connecte(); ?>
         </div>
         <div id="search_bar">
             <a href="">Accueil</a>
@@ -47,33 +30,7 @@ require_once 'template/title.php';
                     <div id="slogan_container">
                         <h1>WE ARE THE TALENTS</h1>
                     </div>
-                    <div id="share_container">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><a name="fb_share" type="button" share_url="YOUR_URL"></a>
-                                        <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share"
-                                                type="text/javascript">
-                                        </script>
-                                    </td>
-                                    <td>
-                                        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-                                        <script type="IN/Share"></script>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="none">Tweet</a>
-                                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                                    </td>
-                                    <td>
-                                        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-                            <g:plusone annotation="none" size="tall" width="100px"></g:plusone>
-                            </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <?php share_box(); ?>
                 </div>
                 <div id="talents">
                     <h2>Talent du mois</h2>
