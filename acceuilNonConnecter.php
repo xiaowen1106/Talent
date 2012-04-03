@@ -1,6 +1,7 @@
 <?php
 require_once 'template/talent.php';
 require_once 'template/inscription.php';
+require_once 'template/title.php';
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -39,15 +40,7 @@ require_once 'template/inscription.php';
         </div>
         <div id="main_container">
             <div id="left_container">
-                <ul id="cataglogue_list">
-                    <li id="catalogue_recherche">recherche catalogue</li>
-                    <li id="catalogue_title"><h2>Catégories</h2></li>
-                    <li><a href=""><img id="category_button" src="img/category1.jpg"></a></li>
-                    <li><a href=""><img id="category_button" src="img/category2.jpg"></a></li>
-                    <li><a href=""><img id="category_button" src="img/category3.jpeg"></a></li>
-                    <li><a href=""><img id="category_button" src="img/category4.jpg"></a></li>
-                    <li><a href=""><img id="category_button" src="img/category5.jpg"></a></li>
-                </ul>
+                <?php categories(); ?>
             </div>
             <div id="center_container">
                 <div id="center_upper">
