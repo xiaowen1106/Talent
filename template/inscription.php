@@ -15,19 +15,19 @@ function inscription_box() {
                 </tr>
                 <tr>
                     <td>Repeat Email: </td>
-                    <td><input type=\"text\" name=\"repeatEmail\"></td>
+                    <td><input type=\"text\" name=\"Vérification email\"></td>
                 </tr>
                 <tr>
                     <td>Password: </td>
-                    <td><input type=\"password\" name=\"password\"></td>
+                    <td><input type=\"password\" name=\"Mot de passe\"></td>
                 </tr>
                 <tr>
                     <td>Repeat Password </td>
-                    <td><input type=\"password\" name=\"repeatPassword\"></td>
+                    <td><input type=\"password\" name=\"Vérification Mot de passe\"></td>
                 </tr>
                 <tr>
-                    <td><input type=\"button\" value=\"Cancel\" id=\"cancelButton\" /></td>
-                    <td><input type=\"submit\" value=\"inscrire\" id=\"inscrireButton\" /></td>
+                    <td><input type=\"button\" value=\"Annuler\" id=\"cancelButton\" /></td>
+                    <td><input type=\"submit\" value=\"S'inscrire\" id=\"inscrireButton\" /></td>
                 </tr>
             </tbody>
         </table>
