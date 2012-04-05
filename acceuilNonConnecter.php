@@ -17,10 +17,7 @@ require_once 'template/framework.php';
         <div id="title">
             <?php title_non_connecte(); ?>
         </div>
-        <div id="search_bar">
-            <a href="">Accueil</a>
-            <div id="search_box"></div>
-        </div>
+            <?php searchBar_non_connecte(); ?>
         <div id="main_container">
             <div id="left_container">
                 <?php categories(); ?>

@@ -2,17 +2,19 @@
 
 function categories() {
     $categories = array(
-        array("id" => 1, "img" => "img/category1.jpg"),
-        array("id" => 2, "img" => "img/category2.jpg"),
-        array("id" => 3, "img" => "img/category3.jpeg"),
-        array("id" => 4, "img" => "img/category4.jpg"),
-        array("id" => 5, "img" => "img/category5.jpg"),
+        array("id" => 1, "img" => "img/Architecte.png"),
+        array("id" => 2, "img" => "img/Arts.png"),
+        array("id" => 3, "img" => "img/Comedie.png"),
+        array("id" => 4, "img" => "img/Decorateur.png"),
+        array("id" => 5, "img" => "img/Ecrivain.png"),
+        array("id" => 6, "img" => "img/Photo.png"),
+        array("id" => 7, "img" => "img/Sportif.png")
     );
     echo "<ul id=\"cataglogue_list\">
             <li id=\"catalogue_recherche\">recherche catalogue</li>
                 <li id=\"catalogue_title\"><h2>Catégories</h2></li>";
     foreach ($categories as $categorie) {
-        echo "<li><a href=\"\"><img id=" . $categorie["id"] . " src=\"" . $categorie["img"] . "\"></a></li>";
+        echo "<li><a href=\"?cat=".$categorie["id"]."\"><img id=" . $categorie["id"] . " src=\"" . $categorie["img"] . "\"></a></li>";
     }
     echo "</ul>";
 }
@@ -40,7 +42,10 @@ function title_non_connecte(){
 }
 
 function searchBar_non_connecte(){
-    
+    echo "<div id=\"search_bar\">
+            <a href=\"\">Accueil</a>
+            <div id=\"search_box\"></div>
+        </div>";
 }
 
 function share_box(){
