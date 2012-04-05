@@ -3,14 +3,13 @@
 function categories() {
     $categories = array(
         array("id" => 1, "img" => "img/Architecte.png"),
-        array("id" => 2, "img" => "img/Arts.png"),
+        array("id" => 2, "img" => "img/Peintre.png"),
         array("id" => 3, "img" => "img/Comedie.png"),
         array("id" => 4, "img" => "img/Decorateur.png"),
         array("id" => 5, "img" => "img/Ecrivain.png"),
         array("id" => 6, "img" => "img/Photo.png"),
         array("id" => 7, "img" => "img/Sportif.png"),
-        array("id" => 8, "img" => "img/Peintre.png"),
-        array("id" => 9, "img" => "img/Musique.png")
+        array("id" => 8, "img" => "img/Musique.png")
     );
     echo "<ul id=\"cataglogue_list\">
             <li id=\"catalogue_recherche\">recherche catalogue</li>
