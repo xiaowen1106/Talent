@@ -10,7 +10,7 @@ function talent_mini() {
                                         <li>Nom: </li>
                                         <li>Prénom: </li>
                                         <li>Nom d'artiste: </li>
-                                        <li>Catélogue du talent: </li>
+                                        <li>Catégorie du talent: </li>
                                         <li>Description: </li>
                                         <li><a href=\"\">Voir son profil</a></li>
                                     </ul>
