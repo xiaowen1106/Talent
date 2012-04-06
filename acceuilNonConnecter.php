@@ -34,7 +34,7 @@ require_once 'template/framework.php';
                     <div id="talent_mois">
                         <?php talent_mini(); ?>
                     </div>
-                    <h2>Talent à l'une</h2>
+                    <h2>Talent à la une</h2>
                     <div id="talent_une">
                         <?php talent_mini(); ?>
                     </div>
