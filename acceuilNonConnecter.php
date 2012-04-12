@@ -13,7 +13,7 @@ require_once 'template/framework.php';
         <script src="script/jquery-1.7.1.min.js"></script>
         <script src="script/index.js"></script>
     </head>
-    <body>
+    <body background="img/background.jpg">
         <div id="title">
             <?php title_non_connecte(); ?>
         </div>
