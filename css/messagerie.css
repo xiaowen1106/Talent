@@ -1,0 +1,42 @@
+/* 
+    Document   : messagerie
+    Created on : Apr 14, 2012, 7:02:24 AM
+    Author     : cxy
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* 
+   partie ajoute de zhiying
+*/
+#btnmsg_container {
+    float: right;
+    padding-top: 10px;
+}
+
+#msg_container {
+    height :75%;
+    margin-top: 20px;
+}
+#msg_read{
+   margin-left:50px; 
+   height :60%;/* on va enlever ce parametre si on peut lire le BD */
+   border-bottom-style: solid;
+   border-bottom-color: #778D98;
+}
+#msg_written {
+   padding-top: 15px; 
+    
+}
+#label_msg {
+    color :#778D98;
+}
+#input_msg {
+    
+}
+
