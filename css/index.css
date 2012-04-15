@@ -75,7 +75,7 @@ body {
 }
 
 #center_container{
-    background-color:#778D98;
+/*    background-color:#778D98;*/
     height:100%;
 }
 
@@ -99,8 +99,16 @@ body {
     text-align: center;
 }
 
+#talents h2{
+    margin-bottom: 0px;
+    margin-top: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color:#778D98;
+}
+
 #talents div{
-    background-color: #EEEEEE;
+/*    background-color: #EEEEEE;*/
 }
 
 #talents ul li {
