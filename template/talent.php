@@ -21,6 +21,7 @@ function talent_mini() {
                             </tr>
                         </tbody>
                     </table>";
+
 }
 
 ?>

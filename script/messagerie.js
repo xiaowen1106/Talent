@@ -57,15 +57,16 @@ function show_message(){
 }
 
 function return_accueil(){
-    document.getElementById("talents").innerHTML="<div id='msg_container'>\n\
-        <div id='msg_read'></div>\n\
-        <div id='msg_written'>\n\
-            <label id='label_msg'>Enter your message :</label>\n\
-            <input type='text' id='input_msg' size='80' />\n\
-            <input type='button' id='valid_msg' value='submit' />\n\
-        </div>\n\
-    </div>";
+    document.getElementById("talents").innerHTML="<div id=''></div>";
     
+}
+
+function msg_envoyer(){
+    
+    var contexte=document.getElementById("input_msg").value;
+    //alert(contexte);
+    document.getElementById("msg_read").innerHTML+=contexte;
+    document.getElementById("input_msg").value="";
 }
 
 
