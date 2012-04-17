@@ -2,6 +2,7 @@
 require_once 'template/talent.php';
 require_once 'template/inscription.php';
 require_once 'template/framework.php';
+require_once 'database.php';
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -17,7 +18,7 @@ require_once 'template/framework.php';
     </head>
     <body background="img/background.jpg">
         <div id="title">
-            <?php title_non_connecte(); ?>
+            <?php connect();title_non_connecte(); ?>
         </div>
             <?php searchBar_non_connecte(); ?>
         <div id="main_container">
