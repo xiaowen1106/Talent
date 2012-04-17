@@ -5,5 +5,7 @@ $(document).ready(function() {
 
         $("#cancelButton").click(function(){
             	$("#window").css("display","none");
-        })
+        });
 });
+
+
