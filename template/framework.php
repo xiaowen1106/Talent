@@ -78,4 +78,10 @@ function share_box(){
                         </table>
                     </div>";
 }
-?>
+//ajout de zhiying
+function btnMsg_connect() {
+    echo "<div id=\"btnmsg_container\">
+            <input type=\"button\" id=\"btnmsg\" value=\"send a message\" onClick=\"show_message()\">
+          </div>";
+}
+
