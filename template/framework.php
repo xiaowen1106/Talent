@@ -27,7 +27,9 @@ function title_non_connecte(){
                     <table border=\"0\">
                         <tbody>
                             <tr>
+                                <td>Username: </td>
                                 <td><input type=\"username\" name=\"username\" value=\"\" /></td>
+                                <td>Mot de passe: </td>
                                 <td><input type=\"password\" name=\"password\" value=\"\" /></td>
                                 <td><input type=\"submit\" value=\"connection\" name=\"submit\" /></td>
                             </tr>
