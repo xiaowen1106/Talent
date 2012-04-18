@@ -102,7 +102,7 @@ $(document).ready(function() {
                 username:username.val(),
                 email:email.val(),
                 password:password.val(),
-                role:$('[name=role]').val()
+                role:$('[name=role]:checked').val()
             },
             success:function(e){
                 window.location.href="";
