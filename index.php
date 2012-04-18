@@ -1,9 +1,9 @@
 <?php
 require_once 'template/talent.php';
-require_once 'template/inscription.php';
 require_once 'template/framework.php';
 require_once 'database.php';
-connect();
+require_once 'class/User.php';
+session_start();
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -19,18 +19,32 @@ connect();
     </head>
     <body background="img/background.jpg">
         <div id="title">
-            <?php 
-            if(isset($_COOKIE["uid"])){
-                print_r($GLOBALS["currentUser"]);
+            <?php
+            if(isset($_SESSION["currentUser"])){
+                $currentUser = $_SESSION["currentUser"];
+                title_connecte($currentUser);
             }else{
                 title_non_connecte();
             }
             ?>
         </div>
-            <?php searchBar_non_connecte(); ?>
+            <?php
+            if(isset($_SESSION["currentUser"])){
+                searchBar_connecte($currentUser);
+            }else{
+                searchBar_non_connecte();
+            }
+            ?>
         <div id="main_container">
             <div id="left_container">
-                <?php categories(); ?>
+                <?php
+                if (isset($_SESSION["currentUser"]) && $_SESSION["currentUser"]->getRole()==2) {
+                    statistique();
+                } else {
+                    categories();
+                }
+                ?>
+
             </div>
             <div id="center_container">
                 <div id="center_upper">

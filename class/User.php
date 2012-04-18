@@ -13,6 +13,8 @@ class User {
     private $username;
     private $role;
     private $id;
+    private $photo;
+
     public function getId() {
         return $this->id;
     }
@@ -36,6 +38,15 @@ class User {
     public function setRole($role) {
         $this->role = $role;
     }
+
+    public function getPhoto() {
+        return $this->photo;
+    }
+
+    public function setPhoto($photo) {
+        $this->photo = $photo;
+    }
+
 
 
 }

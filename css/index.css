@@ -42,6 +42,14 @@ body {
 /*    background-color: #66FF66;*/
 }
 
+#search_bar td{
+    padding-left: 50px;
+}
+
+#accueil {
+   padding-right: 500px;
+}
+
 #main_container {
     width: 80%;
     margin-left: auto;
@@ -115,4 +123,15 @@ body {
     display: block;
 }
 
+#currentUser{
+    margin-left: 800px;
+}
 
+#logout{
+    margin-left: 100px;
+}
+
+warning{
+    color:red;
+    font-size: 10px;
+}
